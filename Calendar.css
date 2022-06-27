@@ -1,0 +1,515 @@
+body{
+  background-color: rgb(207, 201, 211);
+
+}
+
+.app{
+  /* background-color: rgb(191, 168, 214); */
+  height: 100vh;
+  width: 1535px;
+  text-align: center;
+  margin: auto;
+  /* overflow: hidden; */
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  grid-template-rows: auto;
+
+}
+
+.clock{
+  height: 25px;
+  padding-top: 10px;
+  /* text-align: center; */
+  font-size: 20px;
+  font-family: 'Indie Flower', cursive;
+}
+
+/* ------------------------unvisible-------------------------------------- */
+.monthHeadUnvisible{
+  height: 12.5px;
+  text-align: center;
+  font-size: 5px;
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+  margin: auto;
+}
+ .monthUnvisible{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 96.25px;
+  border-radius: 2.5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+}
+.dayNameUnvisible{
+  border-radius: 1.25px;
+  width: 12.5px;
+  margin-left: 0.625px;
+  margin-right: 0.625px;
+  margin-top: 1.25px;
+  margin-bottom: 1.25px;
+  text-align: center;
+  line-height: 13.75px;
+  font-size: 3.75px;
+  font-family: 'Indie Flower', cursive;
+  background-color: rgb(100, 129, 190);
+}
+.dayNumUnvisible{
+  border-radius: 1.25px;
+  width: 12.5px;
+  margin-top: 0px;
+  margin-bottom: 1.25px;
+  margin-left: 0.625px;
+  margin-right: 0.625px;
+  text-align: center;
+  line-height: 13.25px;
+  font-size: 3.75px;
+  font-family: 'Indie Flower', cursive;
+  background-color: rgb(132, 136, 143);
+}
+.dayNumNotActiveUnvisible{
+  border-radius: 1.25px;
+  width: 12.5px;
+  margin-top: 0px;
+  margin-bottom: 1.25px;
+  margin-left: 0.625px;
+  margin-right: 0.625px;
+  text-align: center;
+  line-height: 13.25px;
+  font-size: 3.75px;
+  font-family: 'Indie Flower', cursive;
+  color:  rgb(103, 106, 112);
+  background-color: rgb(148, 153, 165);
+}
+/* ------------------------------------------------------------------------ */
+/* ------------------------medium------------------------------------------ */
+.monthHeadMedium{
+  height: 30px;
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+  margin: auto;
+}
+.monthMedium{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 231px;
+  border-radius: 6px;
+  box-shadow: 0 9.6px 19.2px 0 rgba(0,0,0,0.2), 0 7.2px 24px 0 rgba(0,0,0,0.19);
+}
+.dayNameMedium{
+  border-radius: 3px;
+  width: 30px;
+  margin-left: 1.5px;
+  margin-right: 1.5px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  text-align: center;
+  line-height: 33px;
+  font-size: 9px;
+  font-family: 'Indie Flower', cursive;
+  background-color: rgb(100, 129, 190);
+}
+.dayNumMedium{
+  border-radius: 3px;
+  width: 30px;
+  margin-top: 0px;
+  margin-bottom: 3px;
+  margin-left: 1.5px;
+  margin-right: 1.5px;
+  text-align: center;
+  line-height: 33px;
+  font-size: 9px;
+  font-family: 'Indie Flower', cursive;
+  background-color: rgb(132, 136, 143);
+}
+div.dayNumMedium:hover{
+  cursor: pointer;
+  background-color: rgba(212, 204, 124, 0.979);
+  transform: scale(1.1);
+}
+div.dayNumMedium:active{
+  transform: scale(1);
+}
+.dayNumNotActiveMedium{
+  border-radius: 3px;
+  width: 30px;
+  margin-top: 0px;
+  margin-bottom: 3px;
+  margin-left: 1.5px;
+  margin-right: 1.5px;
+  text-align: center;
+  line-height: 33px;
+  font-size: 9px;
+  font-family: 'Indie Flower', cursive;
+  color:  rgb(103, 106, 112);
+  background-color: rgb(165, 169, 179);
+}
+div.dayNumNotActiveMedium:hover{
+  cursor: pointer;
+  background-color: rgba(126, 104, 117, 0.37);
+  transform: scale(1.1);
+}
+div.dayNumNotActiveMedium:active{
+  transform: scale(1);
+}
+/* ------------------------------------------------------------------------ */
+/* ------------------------normal------------------------------------------ */
+.monthHead{
+  height: 50px;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+  margin: auto;
+}
+.month{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 385px;
+  border-radius: 10px;
+  box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2), 0 12px 40px 0 rgba(0,0,0,0.19);
+}
+.opacityMonth-enter{
+  opacity: 0;
+}
+.opacityMonth-enter-active{
+  opacity: 1;
+  transition: opacity 300ms;
+}
+.dayName{
+  border-radius: 5px;
+  width: 50px;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  line-height: 55px;
+  font-size: 15px;
+  font-family: 'Indie Flower', cursive;
+  background-color: rgb(100, 129, 190);
+  /* opacity: 0; */
+}
+.dayNum{
+  border-radius: 5px;
+  width: 50px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+  text-align: center;
+  line-height: 55px;
+  font-size: 15px;
+  font-family: 'Indie Flower', cursive;
+  background-color: rgb(132, 136, 143);
+  /* opacity: 0; */
+}
+div.dayNum:hover{
+  cursor: pointer;
+  background-color: rgba(212, 204, 124, 0.979);
+  transform: scale(1.1);
+}
+div.dayNum:active{
+  transform: scale(1);
+}
+.dayNumNotActive{
+  border-radius: 5px;
+  width: 50px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+  text-align: center;
+  line-height: 55px;
+  font-size: 15px;
+  font-family: 'Indie Flower', cursive;
+  color:  rgb(103, 106, 112);
+  background-color:  rgb(165, 169, 179);
+  /* opacity: 0; */
+}
+div.dayNumNotActive:hover{
+  cursor: pointer;
+  background-color: rgba(126, 104, 117, 0.37);
+  transform: scale(1.1);
+}
+div.dayNumNotActive:active{
+  transform: scale(1);
+}
+.dayNumActual{
+  border-radius: 5px;
+  width: 50px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+  text-align: center;
+  line-height: 55px;
+  font-size: 15px;
+  font-family: 'Indie Flower', cursive;
+  background-color: rgb(100, 129, 190);
+}
+div.dayNumActual:hover{
+  cursor: pointer;
+  background-color:  rgba(100, 128, 190, 0.548);
+  transform: scale(1.1);
+}
+div.dayNumActual:active{
+  transform: scale(1);
+}
+/* ------------------------------------------------------------------ */
+/* ------------------------button------------------------------------------ */
+.button1{
+  font-size: 20px;
+  font-family: 'Indie Flower', cursive;
+  margin: auto;
+  margin: 30px;
+  margin-top: 150px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 10px;
+  height: 50px;
+  width: 60px;
+  background-color: rgb(207, 201, 211);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.button1:hover{
+ 
+  background-color: rgba(168, 161, 165, 0.514); 
+  cursor: pointer;
+}
+.button1:active {
+  transform: translateY(4px);
+}
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+/* ------------------------monthUnvisiblePrev------------------------------------------ */
+.monthUnvisiblePrev{
+  opacity: 1;
+}
+.monthUnvisiblePrevContainer{
+  margin-top: 171px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+}
+.monthUnvisiblePrevDec-enter, .monthUnvisiblePrevDec-enter-active{
+  transform: scale(2.4) translateX(83px);
+  opacity: 1;
+  transition: transform 300ms, opacity 300ms;
+}
+/* ---------------------------------------------------------------- */
+/* ------------------------monthPrev------------------------------------------ */
+.monthPrev{
+  opacity: 1;
+}
+.monthPrevContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+.monthPrevInc-enter, .monthPrevInc-enter-active{
+  transform: scale(0.1) translateX(-1000px);
+  opacity: 0;
+  transition: transform 300ms, opacity 300ms ;
+}
+.monthPrevDec-enter, .monthPrevDec-enter-active{
+  transform: scale(1.67) translateX(300px);
+  transition: transform 300ms;
+}
+/* ---------------------------------------------------------------- */
+/* -------------------------month--------------------------------------- */
+.monthCenter{
+  opacity: 1;
+}
+
+.monthContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+.monthInc-enter, .monthInc-enter-active{
+  transform: scale(0.6) translateX(-836px);
+  transition: transform 300ms;
+}
+.monthDec-enter, .monthDec-enter-active{
+  transform: scale(0.6) translateX(836px);
+  transition: transform 300ms;
+}
+/* ---------------------------------------------------------------- */
+/* --------------------------------monthNext-------------------------------- */
+.monthNext{
+  opacity: 1;
+}
+.monthNextContainer{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.monthNextInc-enter, .monthNextInc-enter-active{
+  transform: scale(1.67) translateX(-300px);
+  transition: transform 300ms;
+}
+.monthNextDec-enter, .monthNextDec-enter-active{
+  transform: scale(0.1) translateX(1000px);
+  opacity: 0;
+  transition: transform 300ms, opacity 300ms;
+}
+/* ---------------------------------------------------------------- */
+
+/* --------------------------------monthUnvisibleNext-------------------------------- */
+.monthUnvisibleNext{
+  opacity: 1;
+}
+.monthUnvisibleNextContainer{
+  display: flex;
+  flex-direction: column;
+  margin-top: 180px;
+  align-items: center;
+  opacity: 0;
+}
+.monthUnvisibleNextInc-enter, .monthUnvisibleNextInc-enter-active{
+  transform: scale(2.4) translateX(-83px);
+  opacity: 1;
+  transition: transform 300ms, opacity 300ms;
+}
+/* ---------------------------------------------------------------- */
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+/* .topContainer{
+   margin-top: 300px; 
+} */
+.todoAppClass{
+  width: 385px;
+  height: auto;
+  border-radius: 10px;
+  font-size: 30px;
+  font-family: 'Indie Flower', cursive;
+  /* background-color:  rgb(191, 168, 214); */
+  box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2), 0 12px 40px 0 rgba(0,0,0,0.19);
+}
+.todoAppClassAnimation-enter{
+  opacity: 0;
+}
+.todoAppClassAnimation-enter-active{
+  opacity: 1;
+  transition: opacity 300ms;
+}
+.todoAppClassButton{
+  /* background-color: rgb(191, 168, 214); */
+  width: 70px;
+  height: 35px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom: 25px;
+  outline: none;
+  border: none;
+  font-family: 'Indie Flower', cursive;
+  font-size: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+}
+.todoAppClassButton:hover{
+  /* background-color: rgba(163, 88, 132, 0.514); */
+  background-color: rgba(197, 188, 193, 0.514);
+  cursor: pointer;
+}
+.todoAppClassButton:active {
+  transform: translateY(2px);
+}
+
+
+
+
+
+
+
+.TodoApp{
+  text-align: center;
+  width: 100%;
+  font-family: 'Patrick Hand', cursive; 
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 15px;
+}
+
+.Todo{
+  width: 90%;
+  /* background-color:  rgb(219, 201, 236); */
+  font-size: 15px;
+  padding: 10px;
+  margin: auto;
+  margin-top: 10px;
+  border: rgb(88, 84, 84) solid 1px;
+  outline: none;
+  border-radius: 10px;
+  font-family: 'Indie Flower', cursive; 
+}
+
+.item{
+  margin: auto;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 10px;
+  width: 90%;
+  padding: 5px;
+}
+
+.item button{
+  cursor: pointer;
+  border-radius: 10px;
+  outline: none;
+}
+
+
+.todoAppClassButtonX{
+  /* background-color: rgb(191, 168, 214); */
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  float: right;
+  outline: none;
+  border: none;
+  font-family: 'Indie Flower', cursive;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+}
+.todoAppClassButtonX:hover{
+  /* background-color: rgba(163, 88, 132, 0.514); */
+  background-color: rgba(197, 188, 193, 0.514);
+  cursor: pointer;
+}
+.todoAppClassButtonX:active {
+  transform: translateY(2px);
+}
+
+.todoAppClassButtonDone{
+  /* background-color: rgb(191, 168, 214); */
+  width: 50px;
+  height: 30px;
+  border-radius: 5px;
+  float: left;
+  outline: none;
+  border: none;
+  font-family: 'Indie Flower', cursive;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+}
+.todoAppClassButtonDone:hover{
+  /* background-color: rgba(163, 88, 132, 0.514); */
+  background-color: rgba(197, 188, 193, 0.514);
+  cursor: pointer;
+}
+.todoAppClassButtonDone:active {
+  transform: translateY(2px);
+}
