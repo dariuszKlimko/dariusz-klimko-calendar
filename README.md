@@ -16,6 +16,7 @@ This project is only frontend app.
 Create folder "Calendar" and inside create react app.
 
 ```
+cd Calendar
 npx create-react-app frontend
 ```
 
