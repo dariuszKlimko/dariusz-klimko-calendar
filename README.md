@@ -21,7 +21,7 @@ npx create-react-app frontend
 ```
 
 Open "src" folder and delete all files inside.
-Download code from repository and paste to "src".
+Download code from repository and paste into "src".
 ```
 src/
   components/
