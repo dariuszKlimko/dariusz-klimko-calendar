@@ -39,8 +39,7 @@ src/
 
 Go to "frontend" folder and install packages.
 ```
-npm install concurrently cross-env react-auto-scale wait-on
-```
+npm install react-auto-scale
 
 Run application.
 ```
