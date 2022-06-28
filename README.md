@@ -21,7 +21,6 @@ npx create-react-app frontend
 
 Open "src" folder and delete all files inside.
 Download code from repository and paste to "src".
-
 ```
 src/
   components/
@@ -33,8 +32,15 @@ src/
   logo.svg
   reportWebVitals.js
   setupTests.js
+  README.md
 ```
 
-cd frontend
+Go to "frontend" folder and install packages.
+```
 npm install concurrently cross-env react-auto-scale wait-on
+```
+
+Run application.
+```
+npm start
 ```
