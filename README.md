@@ -40,6 +40,7 @@ src/
 Go to "frontend" folder and install packages.
 ```
 npm install react-auto-scale
+```
 
 Run application.
 ```
