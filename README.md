@@ -14,9 +14,9 @@ This project is only frontend app.
 
 ## Setup
 Create folder "Calendar" and inside create react app.
+Open "Calendar" in e.g. vscode editor and run:
 
 ```
-cd Calendar
 npx create-react-app frontend
 ```
 
