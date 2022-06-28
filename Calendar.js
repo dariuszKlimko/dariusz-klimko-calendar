@@ -13,7 +13,7 @@ function Calendar() {
   useEffect(() => {
     const clockInterval = setInterval(() => setTime(new Date()), 1000);
     return () => {clearInterval(clockInterval);}
-    },[]);
+  },[]);
   
   const actual = new Date();
   const actualDay = actual.getDate();
@@ -205,24 +205,24 @@ function Calendar() {
   }, [date, dateNext, datePrev, dateUnvisiblePrev, dateUnvisibleNext]);
 
   useEffect(() => {
-    return startDay===0 ? setStartDay(7) : startDay;
+    startDay===0&&setStartDay(7);
   },[startDay]);
 
   useEffect(() => {
-   return startDayPrev===0 ? setStartDayPrev(7) : startDayPrev;
+    startDayPrev===0&&setStartDayPrev(7);
   },[startDayPrev]);
 
   useEffect(() => {
-  return startDayNext===0 ? setStartDayNext(7) : startDayNext;
+    startDayNext===0&&setStartDayNext(7);
   },[startDayNext]);
 
   useEffect(() => {
-    return startDayUnvisiblePrev===0 ? setStartDayUnvisiblePrev(7) : startDayUnvisiblePrev;
-   },[startDayUnvisiblePrev]);
+    startDayUnvisiblePrev===0&&setStartDayUnvisiblePrev(7);
+  },[startDayUnvisiblePrev]);
  
-   useEffect(() => {
-   return startDayUnvisibleNext===0 ? setStartDayUnvisibleNext(7) : startDayUnvisibleNext;
-   },[startDayUnvisibleNext]);
+  useEffect(() => {
+     startDayUnvisibleNext===0&&setStartDayUnvisibleNext(7);
+  },[startDayUnvisibleNext]);
 
 //-----------------------------------------------TODO APP----------------------------------------------------------------------- 
 const addItems = (title) =>{
