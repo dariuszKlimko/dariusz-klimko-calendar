@@ -41,7 +41,7 @@ src/
 
 Go to "frontend" folder and install packages.
 ```
-npm install react-auto-scale
+npm install react-auto-scale react-transition-group
 ```
 
 Run application.
