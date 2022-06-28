@@ -18,6 +18,8 @@ Open "Calendar" in e.g. vscode editor and run:
 
 ```
 npx create-react-app frontend
+```
+```
 cd frontend
 ```
 
