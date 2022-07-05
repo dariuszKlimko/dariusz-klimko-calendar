@@ -7,7 +7,9 @@
 
 ## General info
 This project is only frontend app.
+
 Here is deployed version: https://dariusz-klimko-calendartodo.firebaseapp.com/
+
 Here is link to desktop version compiled with [ELECTRON](https://www.electronjs.org/): https://drive.google.com/file/d/11Q4byeZnBM2O84dq93HfaO2-y5dh6X5-/view?usp=sharing
 
 ## Technologies
